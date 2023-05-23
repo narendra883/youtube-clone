@@ -2,9 +2,16 @@ a{
     text-decoration: none;
 }
 
+.thumbnail{
+    width:210px;
+    height:210px;
+    background-color: #000;
+}
+
 .image{
     width:200px;
     height:200px;
-    border-radius: 10px;
+    margin:5px;
+    object-fit: cover; 
 }
 
