@@ -1,0 +1,49 @@
+.videoplayer-container{
+    display: grid;
+    place-items: center;
+}
+.videos{
+    width:200px;
+    height:300px;
+    margin-top: 100px;
+    margin-left:8%;    
+}
+.thumbnail-content{
+    display: grid;
+    place-items: center;
+    margin-left: 7%;
+}
+.title{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.description{
+    max-width: 700px;
+    margin-bottom: 30px;
+}
+
+@media (max-width:425px){
+    .videos{
+        width:100%;
+    }
+    .thumbnail-content{
+        margin-left:20%;
+    }
+    .description{
+        width: 1000px;
+        margin-bottom: 30px;
+    }
+}
+
+@media (min-width:768px){
+    .videos{
+        width:100%
+    }
+    .thumbnail-content{
+        margin-left:12%;
+    }
+    .description{
+        width: 1000px;
+        margin-bottom: 30px;
+    }
+}
