@@ -24,26 +24,18 @@
 
 @media (max-width:425px){
     .videos{
-        width:100%;
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        margin-top: 20px;
+        margin-left: 5%;
     }
-    .thumbnail-content{
-        margin-left:20%;
+    .thumbnail-content {
+        margin-left: 5%;
     }
-    .description{
-        width: 1000px;
-        margin-bottom: 30px;
-    }
-}
 
-@media (min-width:768px){
-    .videos{
-        width:100%
-    }
-    .thumbnail-content{
-        margin-left:12%;
-    }
-    .description{
-        width: 1000px;
+    .description {
+        max-width: 300px;
         margin-bottom: 30px;
     }
 }

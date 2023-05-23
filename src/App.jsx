@@ -66,9 +66,9 @@ const App = () => {
     
       <div className='pagination-container'>
         <div className="pagination">
-          <button onClick={goToPreviousPage}>prev</button>
+          <button onClick={goToPreviousPage}>&lt;</button>
           {renderPaginationButtons()}
-          <button onClick={goToNextPage}>next</button>
+          <button onClick={goToNextPage}>&gt;</button>
         </div>
       </div>
     </div>
