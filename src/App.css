@@ -1,3 +1,6 @@
+/* App.css */
+
+/* Title Container */
 
 .title-container{
   width:100%;
@@ -12,12 +15,47 @@ h1{
   margin-bottom: 20px;
 }
 
-.pagination{
-  display: flex;
-  justify-content: center;
-
+/* Content Container */
+.content-container {
+  padding: 20px;
 }
 
+/* Video List Container */
+.video-list-container {
+  margin-bottom: 50px; /* Added margin to create space for pagination */
+}
+
+/* Video List */
+.video-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+/* Video Player */
+.video-player {
+  margin: 20px;
+}
+
+/* Pagination Container */
+.pagination-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f0f0f0;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .pagination button {
   background-color: #fff;
   border: 1px solid #ddd;
@@ -27,16 +65,6 @@ h1{
   cursor: pointer;
   border-radius: 50%;
 }
-
-.pagination-container{
-  position: absolute;
-  margin-top:20px;
-  width:100%  !important;
-  box-shadow: 0 15px 25px rgba(0,0,0,.6);
-  padding: 20px;
-  
-}
-
 .pagination button.active {
   background-color: green;
   color: #fff;
@@ -47,16 +75,34 @@ h1{
   color:#fff;
 }
 
-@media only screen and (max-width:425px){
-  .pagination-container{
-    position: absolute;
-    margin-top:20px;
-    width:1000px;
-    box-shadow: 0 15px 25px rgba(0,0,0,.6);
-    padding: 20px;
+/* Media Queries for Mobile Responsive Layout */
+@media (max-width: 767px) {
+  .video-list {
+    grid-template-columns: 1fr;
   }
-  
-  .pagination{
-    margin-top:10px;
+
+  .pagination-container {
+    position: static;
+    background-color: transparent;
+    padding: 0;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 425px) {
+  .title-container h1 {
+    font-size: 20px;
+  }
+
+  .pagination-container {
+    position: static;
+    background-color: transparent;
+    padding: 0;
+    margin-top: 20px;
+  }
+
+  .pagination button {
+    font-size: 12px;
+    padding: 5px 8px;
   }
 }
